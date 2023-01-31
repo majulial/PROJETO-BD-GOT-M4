@@ -11,15 +11,91 @@
     
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 
-    
+   <!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
 
     <title>Document</title>
 </head>
 <body>
 
+<nav>
+    <div class="nav-bar">
+
+        <img src="./image/logo.png" class="logo" width="100x" ></img>
+
+
+    <div class="menu">
+
+
+       <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#devs">Devs</a></li>
+            <li><a href="#dados">Dados</a></li>
+            <li><a href="#">Ferramentas</a></li>
+        </ul>
+    </div>
+    <div class="darkLight-searchBox">
+    
+        <div class="searchBox">
+            <div class="searchToggle">
+            <i class='bx bx-x cancel' ></i>
+            <i class='bx bx-search-alt-2 search' ></i>
+            <div class="search-field">
+                <input type="text" placeholder="Pesquisar....">
+                <i class='bx bx-search-alt-2 search' ></i>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</nav>
+
+<section class="Home">
+
+<div class="box">    <img src="./image/PngItem_1150239.png" height="" alt=""></div>
+
+
+    <div class="container1">
+
+        <div class="card1">
+            <div class="content1">
+                <img id="img1" src="./image/sansa.jpg" alt="img" height="500px" width="700px">
+                <h3>Card 1</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod obcaecati distinctio, porro pariatur deleniti dignissimos temporibus quasi, ad, cupiditate odit aliquam vel eius corrupti libero! Aliquam quidem nisi reprehenderit sed!</p>
+                <a href="#">CLick</a>
+            </div>
+        </div>
+
+        <div class="card1">
+            <div class="content1">
+                <img src="./image/daenerys-targaryen-gioielli.png" alt="img" height="500px" width="400px">
+                <h3>Card 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod obcaecati distinctio, porro pariatur deleniti dignissimos temporibus quasi, ad, cupiditate odit aliquam vel eius corrupti libero! Aliquam quidem nisi reprehenderit sed!</p>
+                <a href="#">CLick</a>
+            </div>
+        </div>
+
+        <div class="card1">
+            <div class="content1">
+                <img src="./image/jon.png" alt="img" height="500px" width="400px">
+                <h3>Card 3</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod obcaecati distinctio, porro pariatur deleniti dignissimos temporibus quasi, ad, cupiditate odit aliquam vel eius corrupti libero! Aliquam quidem nisi reprehenderit sed!</p>
+                <a href="#">CLick</a>
+            </div>
+        </div>
+
+    </div>
+
+
+</section >
+<section id="devs">
+
     <div class="titulo">
-        <h1>Desenvolvedores</h1>
+        <h1>DESENVOLVEDORES</h1>
       </div>
+      
 
 
     <div class="slide-container swiper">
@@ -28,6 +104,7 @@
 
             
             <div class="card-wrapper swiper-wrapper">
+
                 <div class="card swiper-slide">
                     <div class="image-content">
                         <span class="overlay"></span>
@@ -41,9 +118,10 @@
                         <h2 class="name">Júlia Lima</h2>
                         <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
 
-                        <a href="https://github.com/majulial"><button class="button"> Ver mais</button></a>
+                        <a href="https://github.com/milenbr"><button class="button"> Ver mais</button></a>
                     </div>
                 </div>
+          
                 <div class="card swiper-slide">
                     <div class="image-content">
                         <span class="overlay"></span>
@@ -115,7 +193,12 @@
         <div class="swiper-button-prev swiper-navBtn"></div>
         <div class="swiper-pagination"></div>
     </div>
-    
+</section>
+    <section id="dados">
+
+
+
+    </section>
     
 </body>
 
@@ -124,6 +207,15 @@
 
    <!-- JavaScript -->
    <script src="./Js/script.js"></script>
+<script src="./Js/scriptt.js"></script>
 
+ <!-- VANILLA JS -->
+<script type="text/javascript" src="/Js/vanilla-tilt.js"></script>
+
+<script>
+
+VanillaTilt.init(document.querySelectorAll(".card1"));
+
+</script>
 
 </html>
