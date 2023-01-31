@@ -1,0 +1,519 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@font-face {
+    font-family: 'Game';
+    src: url('/Fontes/Game\ of\ Thrones.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Game'
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+body{
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+}
+
+
+/* NAVBAR *************/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+   background-image: linear-gradient(transparent, rgb(99, 50, 54), transparent);
+    z-index: 100;
+ 
+
+}
+
+nav .nav-bar {
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav .nav-bar .sidebarOpen {
+    display: none;
+    color: #FFF;
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+nav .nav-bar .logo a::before {
+    content: '';
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: rgb(32, 11, 82);
+}
+
+.menu .logo-toggle {
+display: none;
+}
+
+
+.nav-bar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .nav-links li {
+    margin: 0 5px;
+    list-style: none;
+
+}
+.nav-links li a {
+    position: relative;
+    font-size: 17px;
+    font-weight: 400px;
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px;
+}
+
+nav .nav-bar li a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(50%);
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: rgb(231, 211, 211);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+nav .nav-bar li:hover a::before {
+    opacity: 1;
+}
+
+.nav-bar .searchBox {
+    display: flex;
+    align-items: center;
+}
+
+ .searchToggle {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    
+}
+
+
+.searchToggle i{
+position: absolute;
+color: #ffffff;
+font-size: 22px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+
+.searchToggle i.cancel {
+    opacity: 0;
+    pointer-events: none;
+}
+.searchToggle.active i.cancel {
+    opacity: 1;
+    pointer-events: auto;
+}
+.searchToggle.active i.search {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.searchBox {
+    position: relative;
+}
+
+.searchBox .search-field {
+    position: absolute;
+    bottom: -85px;
+    right: 5px;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(90, 7, 7, 0.808);
+    padding: 3px;
+    border-radius: 6px;
+    box-shadow: 0 5px 5px rgba(110, 109, 107, 0.692);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.searchToggle.active .search-field {
+    bottom:-74px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.search-field::before {
+    content: '';
+    position: absolute;
+    right: 14px;
+    top: -4px;
+    height: 12px;
+    width: 12px;
+    background-color: rgba(114, 65, 88, 0.808);
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.search-field input {
+    height: 100%;
+    width: 100%;
+    padding: 0 45px 0 15px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: rgb(148, 137, 137);
+    
+   
+}
+
+.search-field i {
+    position: absolute;
+    color: rgba(34, 9, 9, 0.664);
+    right: 15px;
+    font-size: 22px;
+}
+
+
+
+/*   FIM   NAVBAR ***********/
+
+
+
+
+/*       HOME ***********************/
+
+.box {
+    height: 100px;
+ 
+}
+
+section.Home {
+    text-align: center;
+    background-image: url('/image/25483\ \(1\).jpg');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ 
+}
+
+.container1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: wrap;
+  z-index: 1;
+  top: 50px;
+}
+
+.card1 {
+  position: relative;
+  width: 250px;
+  height: 400px;
+  margin: 10px;
+  box-shadow: 10px 15px 15px rgba(99, 99, 99, 0.397);
+  border-radius: 15px;
+  background-color: #caa02a65;
+  overflow: hidden;
+  justify-content: center;
+  border-top: 3px solid rgb(255,255,255,0.190);
+  border-left: 3px solid rgb(255,255,255,0.190);
+  border-right: 3px solid rgb(255,255,255, 0.190);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.190);
+}
+
+.container1 .card1:hover .content1 {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+.container1 .card1 .content1 {
+  padding: 20px;
+  text-align: center;
+
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.container1 .card1 .content1 img {
+  position: absolute;
+  top: -80px;
+  right: -100px;
+  font-size: 8em;
+  pointer-events: none;
+}
+
+
+.container1 .card1 .content1 #img1 {
+  position: absolute;
+  top: -20px;
+  right: -220px;
+  font-size: 8em;
+  pointer-events: none;
+}
+
+
+
+
+.container1 .card1 .content1 a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 50px 1px 50px 20px;
+  font-weight:bolder;
+  background: #57400fa9;
+  
+  }
+ 
+  .container1 .card1 .content1 a:hover {
+    background-color: #551212;
+  }
+
+  /* SEÇÃO 2 **************/
+
+
+  section#devs {
+    background-image: url('/image/house-lannister-99vaz5ae77mjry0k.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  section#dados {
+    height: 100vh;
+  }
+
+.titulo {
+    text-align: center;
+    font-size: 2em;
+   width: 100%;
+
+
+    }
+    
+h1 {
+  padding: 100px;
+    font-family: 'Game';
+    color:#FFF;
+    margin-top: -50px;
+}
+
+/* **************************/
+
+.slide-container{
+  top: 100px;
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  margin-bottom: 200px;
+}
+.slide-content{
+    padding-bottom: 35px;
+  margin: 0 100px;
+  overflow: hidden;
+  border-radius: 25px;
+
+}
+.card{
+  border-radius: 25px;
+  background-color: rgb(32, 24, 24);
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(163, 62, 62);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color:rgb(163, 62, 62);
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: rgb(32, 24, 24);
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: rgb(204, 202, 202);
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #aa8c60;
+}
+.name{
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(214, 204, 204);
+}
+.description{
+  font-family: 'Poppins';
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button{
+  font-family: 'Poppins';
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #551212;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #57400f75;
+}
+
+.swiper-navBtn{
+  color: #d7d8da;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #a9aeb9;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+/**************** SLIDE CARROSSEL ********/
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  .container1 .card1 .content1 a {
+    top: -230px;
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 50px 1px 50px 20px;
+    font-weight:bolder;
+    background: #57400fa9;
+    
+    }
+
+
+/*   DEVS *****/
+
+  h1 {
+    position: relative;
+    top: 100px;
+    left: -50px;
+    font-size: 1em;
+  }
+
+  .slide-container{
+    top: 150px;
+ 
+  }
+
+
+  /* SLIDE DEVS ***********/
+  .slide-content{
+    margin: 0 10px;
+
+  }
+  .swiper-navBtn{
+    display: none;
+
+  }
+
+
+
+}
