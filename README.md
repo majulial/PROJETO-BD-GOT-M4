@@ -14,7 +14,7 @@
 <li>personagens</li>
 <li>episódios</li>
 <li>casas</li>
-
+</ul>
 
 
 <h2>Perguntas e Respostas:</h2>
